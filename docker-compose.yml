@@ -1,8 +1,8 @@
 version: "3.8"
 services:
   flask-app:
-    # build: .
-    image: haiderkhan1050/flask-app:1.0
+    build: .
+    # image: haiderkhan1050/flask-app:1.0
     ports:
       - 8888:8888
 
