@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building in the Flask-App branch..'
+                echo 'Building in the Docker Compose branch..'
             }
         }
     }
