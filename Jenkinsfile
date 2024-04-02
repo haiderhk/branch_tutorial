@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Validate Docker-Compose') {
             steps {
-                echo 'Building..'
+                sh 'docker-compose -f docker-compose.yml config'
             }
         }
     }
