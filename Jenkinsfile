@@ -7,6 +7,14 @@ pipeline {
     }
 
     stages {
+        
+        stage('Prepare .env') {
+            steps {
+                script {
+                    sh 'cp .env.example .env'
+                }
+            }
+        }    
         stage('Validate Docker-Compose') {
             steps {
                 script {
