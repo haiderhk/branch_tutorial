@@ -4,7 +4,7 @@ services:
     # build: .
     image: haiderkhan1050/flask-app:1.0
     ports:
-      - 8888:8888
+      - 8080:8080
     env_file:
       - .env
   mongodb:
